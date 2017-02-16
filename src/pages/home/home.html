@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+  <ion-item class="text" *ngFor="let item of items | async">
+    {{item | json}}
+  </ion-item>
+  </ion-list>
+
+  <button ion-button outline (click)="signInWithFacebook()">Facebook</button>
+
+
+  <ion-item>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Email Input"></ion-input>
+  </ion-item>
+
+    <ion-item>
+
+    <ion-input type="password" [(ngModel)]="pass"  placeholder="Password Input"></ion-input>
+
+  </ion-item>
+  
+  <button ion-button (click)="photofeed()">Photofeed</button>
+  <button ion-button (click)="singUp()">SingUp</button>
+   <button ion-button (click)="singoutdata();singOut()">SignoutD</button>
+</ion-content>

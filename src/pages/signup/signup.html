@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Create an Account
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+
+  <ion-item>
+
+    <ion-input type="text" [(ngModel)]="usr"  placeholder="User"></ion-input>
+
+  </ion-item>
+
+  <ion-item>
+
+    <ion-input type="text" [(ngModel)]="name"  placeholder="Name"></ion-input>
+
+  </ion-item>
+
+   <ion-item>
+
+    <ion-input type="text" [(ngModel)]="surname"  placeholder="Surname"></ion-input>
+
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="email" [(ngModel)]="email" placeholder="Email Input"></ion-input>
+  </ion-item>
+
+  <ion-item>
+
+    <ion-input type="password" [(ngModel)]="pass"  placeholder="Password Input"></ion-input>
+
+  </ion-item>
+
+  
+
+  <ion-item>
+  <ion-label>Date</ion-label>
+   <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="bday" placeholder="Date-Time"></ion-datetime>
+  </ion-item>
+
+</ion-list>
+<br>
+  <button (click)="signupUser()">Next</button>
+
+</ion-content>

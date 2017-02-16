@@ -1,0 +1,37 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Photofeed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list>
+	
+
+  	<ion-item class="text" *ngFor="let item of image">
+    <ion-img [src]="item"></ion-img>		
+    </ion-item>
+
+	</ion-list>
+
+	<!-- <ion-list [virtualScroll]="image" approxItemHeight="100px">
+
+  <ion-item *virtualItem="let item"  >
+    
+      <ion-img [src]="item" class="images"></ion-img>
+   
+		
+  </ion-item>
+
+</ion-list>
+ -->
+    <!-- <button ion-button class="leftf" (click)="Geomap()">GeoMap</button> -->
+      <button ion-button class="rightf" (click)="Capture()">Capture</button>
+      <button ion-button class="leftf" (click)="singoutdata()">Logout</button>
+
+</ion-content>
